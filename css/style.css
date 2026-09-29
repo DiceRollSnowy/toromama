@@ -327,7 +327,7 @@ body {
 
     font-family: inherit;
 
-    font-size: 16px;
+    font-size: var(--font-size-large);
     font-weight: 800;
 
     color: var(--color-text-light);
@@ -382,6 +382,55 @@ body {
     background: var(--color-background-section);
 
     text-align: center;
+}
+
+/* ================================
+   Download
+================================ */
+
+.download-section {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.download-button {
+    width: min(100%, 420px);
+
+    padding: 16px 24px;
+
+    border: 0;
+    border-radius: 999px;
+
+    font-family: inherit;
+
+    font-size: var(--font-size-large);
+    font-weight: 800;
+
+    color: var(--color-text-light);
+
+    background:
+        linear-gradient(
+            135deg,
+            #b985ff,
+            #8fcfff
+        );
+
+    box-shadow: 0 8px 18px rgba(130, 105, 170, 0.22);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.download-button:hover {
+    box-shadow: 0 10px 24px rgba(130, 105, 170, 0.28);
+}
+
+.download-button:active {
+    transform: scale(0.97);
 }
 
 /* ================================
@@ -452,6 +501,11 @@ body {
         height: 12px;
 
         border-width: 2px;
+    }
+
+    .create-section,
+    .download-section {
+        margin: 24px 24px;
     }
 }
 
