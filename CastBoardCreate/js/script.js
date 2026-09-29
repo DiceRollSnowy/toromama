@@ -60,27 +60,16 @@ function createAttendanceImage()
         canvas.height = image.height;
 
         // テンプレート画像を描画
-        context.drawImage(
-            image,
-            0,
-            0
-        );
+        context.drawImage(image, 0, 0);
 
         // 日付を描画
-        drawEventDate(
-            context,
-            eventDate.value
-        );
+        drawEventDate(context, eventDate.value);
 
         // おやすみを描画
-        drawRestingCast(
-            context
-        );
+        drawRestingCast(context);
 
         // プレビューに表示
-        showPreview(
-            canvas
-        );
+        showPreview(canvas);
     };
 
     image.src = `${BASE_FILE}`;
@@ -92,8 +81,6 @@ function createAttendanceImage()
 
 function drawEventDate(context, dateValue) 
 {
-    console.log(dateValue);//debug
-
     if (dateValue === "") 
     {
         return;
