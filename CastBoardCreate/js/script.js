@@ -6,8 +6,9 @@ const FONT_FAMILY = '"M PLUS Rounded 1c"';
 const FONT_DATE = "bold 72px 'M PLUS Rounded 1c'";
 const FONT_OYASUMI = "bold 42px 'M PLUS Rounded 1c'";
 
-const weekNames = ["日", "月", "火", "水", "木", "金", "土"];
 const BASE_FILE = "images/base/castlist_base.png";
+
+const WEEK_NAMES = ["日", "月", "火", "水", "木", "金", "土"];
 
 // ========================================
 // 日付選択
@@ -103,7 +104,7 @@ function drawEventDate(context, dateValue)
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(1, "0");
     const day = String(date.getDate()).padStart(1, "0");
-    const week = weekNames[date.getDay()];
+    const week = WEEK_NAMES[date.getDay()];
 
     const text = `${year}年${month}月${day}日(${week})`;
 
