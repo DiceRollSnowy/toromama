@@ -278,9 +278,8 @@ downloadButton.addEventListener("click", function () {
     }
 
     const link = document.createElement("a");
-
     link.href = createdCanvas.toDataURL("image/png");
-    link.download = `CastList_${eventDate.value}.png`;
+    link.download = `ToromamaCastList_${eventDate.value}.png`;
 
     link.click();
 });
