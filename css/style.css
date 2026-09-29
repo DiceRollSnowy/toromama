@@ -384,6 +384,15 @@ body {
     text-align: center;
 }
 
+.preview img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: var(--radius-small);
+}
+
 /* ================================
    Download
 ================================ */
@@ -522,5 +531,13 @@ body {
 
     .cast-name {
         font-size: 10px;
+    }
+
+    .preview img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
     }
 }
