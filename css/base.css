@@ -1,0 +1,106 @@
+/* ==================================================
+   Variables
+================================================== */
+
+:root {
+    /* ==============================
+       Colors
+       ============================== */
+    --color-title: #3d3450;
+
+    --color-text: #30283a;
+    --color-text-light: #ffffff;
+    --color-text-sub: #6f657a;
+
+    --color-white: #ffffff;
+
+    --color-primary: #b78cff;
+    --color-primary-dark: #9670dc;
+
+    --color-blue: #ecdaff;
+    --color-pink: #ffdaec;
+    --color-purple: #ded6ff;
+
+    --color-card: rgba(255, 255, 255, 0.72);
+
+    --color-border: rgba(255, 255, 255, 0.9);
+    --color-border-dark: rgba(145, 125, 170, 0.35);
+
+    --color-overlay: rgba(50, 38, 65, 0.55);
+
+    /*--color-isnotw-background: rgba(55, 43, 70, 0.55);*/
+
+    --color-status-background-work: #b78cff;
+    --color-status-background-notwork: #d9d0df;
+
+    --color-background: #f8f5ff;
+    
+    --color-cast-item-background: #dddddd;
+
+    --color-background-section: rgba(255, 255, 255, 0.62);
+
+    --background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255, 218, 236, 0.9),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(218, 236, 255, 0.9),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(222, 214, 255, 0.8),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #ffdaec,
+            #ded6ff 50%,
+            #ecdaff
+        );
+
+    /* ==============================
+       Shadow
+       ============================== */
+
+    --shadow-card: 0 8px 24px rgba(100, 75, 130, 0.12);
+    --shadow-cast: 0 8px 18px rgba(130, 91, 180, 0.18);
+    --shadow-primary: 0 0 0 2px rgba(183, 140, 255, 0.18);
+
+    /* ==============================
+       Border Radius
+       ============================== */
+
+    --radius-small: 10px;
+    --radius-medium: 18px;
+    --radius-large: 24px;
+
+    /* ==============================
+       Font
+       ============================== */
+
+    --font-family: "M PLUS Rounded 1c", sans-serif;
+
+    --font-size-medium: 14px;
+
+    /* ==============================
+       Spacing
+       ============================== */
+
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 800;
+}
