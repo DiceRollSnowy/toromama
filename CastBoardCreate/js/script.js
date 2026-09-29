@@ -7,6 +7,7 @@ const FONT_DATE = "bold 72px 'M PLUS Rounded 1c'";
 const FONT_OYASUMI = "bold 42px 'M PLUS Rounded 1c'";
 
 const weekNames = ["日", "月", "火", "水", "木", "金", "土"];
+const BASE_FILE = "images/base/castlist_base.png";
 
 // ========================================
 // 日付選択
@@ -81,7 +82,7 @@ function createAttendanceImage()
         );
     };
 
-    image.src = "/images/base/castlist_base.png";
+    image.src = `${BASE_FILE}`;
 }
 
 // ========================================
