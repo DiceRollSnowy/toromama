@@ -46,6 +46,7 @@ body {
    Section
 ================================ */
 
+.date-section,
 .cast-section,
 .preview-section {
     padding: 24px;
@@ -62,6 +63,7 @@ body {
     backdrop-filter: blur(12px);
 }
 
+.date-section h2,
 .cast-section h2,
 .preview-section h2 {
     margin: 0;
@@ -72,6 +74,44 @@ body {
     margin: 6px 0 20px;
     font-size: var(--font-size-medium);
     color: var(--color-text);
+}
+
+/* ================================
+   Date 
+================================ */
+
+.date-section {
+    margin-bottom: 24px;
+}
+
+.date-section input[type="date"] {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: var(--font-size-large);
+
+    background: var(--color-card);
+    border: 2px solid rgba(183, 140, 255, 0.25);
+    border-radius: var(--radius-small);
+
+    outline: none;
+    cursor: pointer;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+.date-section input[type="date"]:focus {
+    background: #ffffff;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(183, 140, 255, 0.15);
 }
 
 /* ================================
@@ -273,9 +313,7 @@ body {
 
 .create-section {
     display: flex;
-
     justify-content: center;
-
     margin: 24px 0;
 }
 
@@ -364,7 +402,7 @@ body {
    Responsive
 ================================ */
 
-@media (max-width: 700px) {
+@media (max-width: 640px) {
 
     .site-header {
         padding-top: 24px;
@@ -378,11 +416,16 @@ body {
         width: min(100% - 20px, 600px);
     }
 
+    .date-section,
     .cast-section,
     .preview-section {
         padding: 16px;
-
         border-radius: 20px;
+    }
+
+    .date-section input[type="date"] {
+        min-height: 36px;
+        font-size: 14px;
     }
 
     .cast-list {
